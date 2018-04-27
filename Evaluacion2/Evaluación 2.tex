@@ -1,0 +1,56 @@
+\documentclass{article}
+
+% set font encoding for PDFLaTeX, XeLaTeX, or LuaTeX
+\usepackage{ifxetex}
+\ifxetex
+  \usepackage{fontspec}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \usepackage{graphicx}
+  \usepackage{siunitx}
+  \usepackage{amsmath}
+  \graphicspath{ {images/} }
+\fi
+
+\usepackage{hyperref}
+\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\title{Evaluación 2}
+\author{Luis Aarón Cerón Ramírez}
+
+% Enable SageTeX to run SageMath code right inside this LaTeX file.
+% http://mirrors.ctan.org/macros/latex/contrib/sagetex/sagetexpackage.pdf
+% \usepackage{sagetex}
+
+\begin{document}
+\maketitle
+\section{Introducción}
+El sistema de Lorenz es un sistema compuesto por ecuaciones diferenciales ordinarias, estudiado por primera vez por Edward Lorenz. Este modelo es notable por tener soluciones caóticas para valores de ciertos parámetros y condiciones iniciales.
+
+\section{Revisión}
+En 1963, Lorenz desarrollo un modelo matématico simplificado para la convección atmósferica. El modelo consta de tres ecuaciones diferenciales ordinarias conocidas como las ecuaciones de Lorenz:
+\begin{equation*}
+\begin{aligned}
+\frac{dx}{dt}= \sigma(y-x)\\
+\frac{dy}{dt}= x(\rho-z)-y\\
+\frac{dz}{dt}= xy- \beta z\\
+\end{aligned}
+\end{equation*}
+
+Esta ecuaciones relacionan las propiedades de una capa de fluido bidimensional uniformemente calentado desde abajo y enfriada desde arriba.
+\newline
+Las ecuaciones describen la taza de cambio de tres cantidades con respecto al tiempo: $x$ es proporcional a la taza de convección, $y$ es la variación de temperatura, y $z$ la variación vertical de la temperatura. Las constantes $\sigma$, $\rho$ y $\beta$ son parámetros proporcionales al numéro de Prandtl, el numéro de Rayleigh y ciertas dimensiones fisícas del mismo campo.
+\newline
+Desde un punto de vista técnico, el sistema de Lorenz es no lineal, no periódico, tridimensional y determinista. Las ecuaciones de Lorenz han sido el tema de cientos de artículos de investigación, y al menos un estudio de duración de un libro.
+
+\section{Resultados}
+
+
+
+
+
+
+
+
+\end{document}
